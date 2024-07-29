@@ -11,59 +11,120 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
 
     <title>Frontend Mentor | Four card feature section</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header>
-      <h1>Reliable, efficient delivery</h1>
-      <h2>Powered by Technology</h2>
-      <p>
+  <body
+    class="font-poppins md:mx-auto min-h-full bg-very-light-gray flex justify-center flex-col gap-20 px-8 py-24"
+  >
+    <header
+      class="text-center flex flex-col gap-5 justify-center text-very-dark-blue"
+    >
+      <div class="text-2xl max-w-xs mx-auto xl:max-w-full xl:text-4xl">
+        <h1 class="font-extralight">Reliable, efficient delivery</h1>
+        <h2 class="font-semibold mt-1 xl:m1-2 text-very-dark-blue">
+          Powered by Technology
+        </h2>
+      </div>
+      <p
+        class="text-hp text-grayish-blue font-light max-w-xs mx-auto xl:max-w-lg"
+      >
         Our Artificial Intelligence powered tools use millions of project data
         points to ensure that your project is successful
       </p>
     </header>
 
-    <main>
-      <section class="tools">
-        <article class="tool">
-          <h3>Supervisor</h3>
-          <p>Monitors activity to identify project roadblocks</p>
-          <img src="images/icon-supervisor.svg" alt="Supervisor Icon" />
-        </article>
-
-        <article class="tool">
-          <h3>Team Builder</h3>
-          <p>
-            Scans our talent network to create the optimal team for your project
+    <main
+      class="grid grid-cols-1 gap-5 xl:gap-8 xl:grid-cols-3 xl:items-center xl:max-w-fit xl:mx-auto"
+    >
+      <article
+        class="bg-white shadow-xl rounded-lg overflow-hidden max-w-xs mx-auto xl:h-fit"
+      >
+        <div class="h-1 bg-cyan"></div>
+        <div class="p-8">
+          <h2 class="text-xl font-semibold text-very-dark-blue">Supervisor</h2>
+          <p class="text-grayish-blue mt-2 text-p font-regular">
+            Monitors activity to identify project roadblocks
           </p>
-          <img src="images/icon-team-builder.svg" alt="Team Builder Icon" />
-        </article>
 
-        <article class="tool">
-          <h3>Calculator</h3>
-          <p>
-            Uses data from past projects to provide better delivery estimates
-          </p>
-          <img src="images/icon-calculator.svg" alt="Calculator Icon" />
-        </article>
+          <div class="mt-7 flex justify-end">
+            <img
+              src="images/icon-supervisor.svg"
+              alt="Magnifying glass icon"
+              class="h-14 w-14"
+            />
+          </div>
+        </div>
+      </article>
 
-        <article class="tool">
-          <h3>Karma</h3>
-          <p>Regularly evaluates our talent to ensure quality</p>
-          <img src="images/icon-karma.svg" alt="Karma Icon" />
+      <section class="flex flex-col gap-5 xl:gap-8">
+        <article
+          class="bg-white shadow-xl rounded-lg overflow-hidden max-w-xs mx-auto"
+        >
+          <div class="h-1 bg-red"></div>
+          <div class="p-8">
+            <h2 class="text-xl font-semibold text-very-dark-blue">
+              Team Builder
+            </h2>
+            <p class="text-grayish-blue mt-2 text-p font-regular">
+              Scans our talent network to create the optimal team for your
+              project
+            </p>
+            <div class="mt-7 flex justify-end">
+              <img
+                src="images/icon-team-builder.svg"
+                alt="Magnifying glass icon"
+                class="h-14 w-14"
+              />
+            </div>
+          </div>
+        </article>
+        <article
+          class="bg-white shadow-xl rounded-lg overflow-hidden max-w-xs mx-auto"
+        >
+          <div class="h-1 bg-orange"></div>
+          <div class="p-8">
+            <h2 class="text-xl font-semibold text-very-dark-blue">Karma</h2>
+            <p class="text-grayish-blue mt-2 text-p font-regular">
+              Regularly evaluates our talent to ensure quality
+            </p>
+            <div class="mt-7 flex justify-end">
+              <img
+                src="images/icon-karma.svg"
+                alt="Magnifying glass icon"
+                class="h-14 w-14"
+              />
+            </div>
+          </div>
         </article>
       </section>
-    </main>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
+      <article
+        class="bg-white shadow-xl rounded-lg overflow-hidden max-w-xs mx-auto xl:h-fit"
+      >
+        <div class="h-1 bg-blue"></div>
+        <div class="p-8">
+          <h2 class="text-xl font-semibold text-very-dark-blue">Calculator</h2>
+          <p class="text-grayish-blue mt-2 text-p font-regular">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+
+          <div class="mt-7 flex justify-end">
+            <img
+              src="images/icon-calculator.svg"
+              alt="Magnifying glass icon"
+              class="h-14 w-14"
+            />
+          </div>
+        </div>
+      </article>
+    </main>
   </body>
 </html>
